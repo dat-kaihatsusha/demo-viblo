@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # get 'static_pages/help'
   # get 'static_pages/about'
   # resources :microposts
-  # resources :users
+  resources :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   # root 'users#index'
   # get 'static_pages/contact'
@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   get '/about', to: 'static_pages#about'
   get '/contact', to: 'static_pages#contact'
   get '/signup', to: 'users#new'
+  resources :users
 end

@@ -1,5 +1,8 @@
 class ApplicationController < ActionController::Base
-    def hello
-        render html: "hello, world!"
+    def Show
+        @user = User.find(params[:id]) 
+    end
+
+    def new
     end
 end
